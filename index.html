@@ -9,116 +9,98 @@
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
             color: #333;
-            font-size: 1rem;
             margin: 0;
             padding: 0;
         }
 
-        h1, h2 {
-            font-weight: 700;
+        header {
+            background-color: #FF6F00; /* Naranja */
+            color: #fff;
+            padding: 40px 10px;
             text-align: center;
+            border-radius: 10px;
+        }
+
+        header h1 {
+            font-family: 'Impact', sans-serif;
+            font-size: 4rem;
+            font-weight: bold;
+            color: white;
+            text-transform: uppercase;
             margin: 0;
         }
 
-        h1 {
-            font-family: 'Impact', sans-serif; /* Fuente más gruesa y simple */
-            color: #ffffff;
-            font-size: 5rem;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-            text-transform: uppercase;
-            -webkit-text-stroke: 2px black;
+        header p {
+            font-size: 1.2rem;
+            font-weight: normal;
+            color: #f0f0f0;
+            margin-top: 10px;
         }
 
-        h2 {
-            font-family: Arial, sans-serif;
-            color: #666666;
-            font-size: 1.8rem;
-            text-align: left;
-            font-weight: normal;
+        section {
+            padding: 20px;
+            margin: 0 10px;
         }
 
         .news-item {
-            margin-bottom: 20px;
+            background-color: #fff;
             padding: 15px;
-            background-color: #ffffff;
+            margin-bottom: 15px;
             border-radius: 5px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
 
         .news-item h2 {
-            margin: 0 0 10px 0;
-            font-size: 1.8rem;
-            text-align: left;
+            font-size: 1.6rem;
+            color: #333;
             font-weight: bold;
         }
 
         .news-item p {
-            font-size: 1.2rem;
+            font-size: 1rem;
             color: #555;
-            text-align: left;
         }
 
-        header {
-            background-color: #FF6F00;
-            padding: 20px;
-            text-align: center;
-            border-radius: 5px;
-        }
-
-        section {
-            margin: 20px;
-        }
-
-        p.subheading {
-            font-size: 1.6rem;
-            color: #777;
-            text-align: center;
-            font-weight: bold;
-        }
-
-        /* Responsividad para móviles */
+        /* Ajustes para móviles */
         @media (max-width: 768px) {
-            h1 {
-                font-size: 3.5rem; /* Título más pequeño en pantallas móviles */
+            header h1 {
+                font-size: 3rem; /* Ajustar el tamaño en móviles */
+                margin: 0;
             }
 
-            h2 {
-                font-size: 1.4rem; /* Ajustar tamaño de los subtítulos en móviles */
+            header p {
+                font-size: 1rem;
             }
 
             .news-item h2 {
-                font-size: 1.4rem; /* Ajuste del tamaño de los títulos de las noticias */
+                font-size: 1.4rem; /* Ajuste de títulos de noticias */
             }
 
             .news-item p {
-                font-size: 1rem; /* Ajuste de los textos de noticias en móviles */
+                font-size: 0.9rem; /* Ajuste del tamaño de los párrafos */
             }
 
-            p.subheading {
-                font-size: 1.3rem; /* Ajuste del subtítulo */
-            }
-
-            header {
-                padding: 15px;
+            section {
+                padding: 10px;
             }
         }
 
-        /* Diseño para pantallas más grandes */
+        /* Ajustes para pantallas grandes */
         @media (min-width: 769px) {
             body {
-                font-size: 1.3rem; /* Aumento de tamaño de texto en pantallas grandes */
+                font-size: 1rem;
             }
 
-            h1 {
-                font-size: 5rem;
+            header h1 {
+                font-size: 4.5rem;
             }
 
             .news-item h2 {
-                font-size: 1.8rem;
+                font-size: 1.6rem;
             }
 
             .news-item p {
-                font-size: 1.2rem;
+                font-size: 1rem;
             }
         }
     </style>
@@ -126,8 +108,9 @@
 <body>
     <header>
         <h1>Lo mejor de la última semana, solo en GoTech!</h1>
-        <p class="subheading">Todos los viernes, te traemos lo más destacado de la tecnología, ¡para que no te pierdas nada!</p>
+        <p>Todos los viernes, te traemos lo más destacado de la tecnología, ¡para que no te pierdas nada!</p>
     </header>
+
     <section>
         <div class="news-item">
             <h2>SEGUNDA PANTALLA EN SWITCH 2???</h2>
