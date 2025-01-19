@@ -5,38 +5,117 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lo mejor de la última semana, solo en GoTech!</title>
     <style>
-        body { font-family: Arial, sans-serif; background-color: #f4f4f4; color: #333; font-size: 1.3rem; } /* Aumento general de tamaño de texto */
-        h1, h2 { font-weight: 700; text-align: center; }
-        h1 { 
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            font-size: 1rem;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1, h2 {
+            font-weight: 700;
+            text-align: center;
+            margin: 0;
+        }
+
+        h1 {
             font-family: 'Impact', sans-serif; /* Fuente más gruesa y simple */
-            color: #ffffff; 
-            font-size: 5.5rem; /* Ajuste para que el título esté en una sola fila */
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
-            text-transform: uppercase; 
-            -webkit-text-stroke: 2px black; /* Borde negro alrededor del texto */
+            color: #ffffff;
+            font-size: 5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            text-transform: uppercase;
+            -webkit-text-stroke: 2px black;
         }
-        h2 { 
-            font-family: Arial, sans-serif; /* Fuente igual que el contenido */
-            color: #666666; /* Gris más oscuro para los titulares */
-            font-size: 2rem; /* Titulares de noticias */
-            text-align: left; 
-            font-weight: normal; /* Estilo normal para los titulares */
+
+        h2 {
+            font-family: Arial, sans-serif;
+            color: #666666;
+            font-size: 1.8rem;
+            text-align: left;
+            font-weight: normal;
         }
-        .news-item { margin-bottom: 20px; padding: 15px; background-color: #ffffff; border-radius: 5px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); }
-        .news-item h2 { 
-            margin: 0 0 10px 0; 
-            font-size: 2rem; 
-            text-align: left; 
-            font-weight: bold; /* Negrita para los titulares de noticias */
+
+        .news-item {
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
-        .news-item p { font-size: 1.3rem; color: #555; text-align: left; } /* Noticias alineadas a la izquierda */
-        header { background-color: #FF6F00; padding: 20px; text-align: center; border-radius: 5px; }
-        section { margin: 20px; }
-        p.subheading { 
-            font-size: 2rem; 
-            color: #777; 
-            text-align: center; 
-            font-weight: bold; /* Subtítulo más grande */
+
+        .news-item h2 {
+            margin: 0 0 10px 0;
+            font-size: 1.8rem;
+            text-align: left;
+            font-weight: bold;
+        }
+
+        .news-item p {
+            font-size: 1.2rem;
+            color: #555;
+            text-align: left;
+        }
+
+        header {
+            background-color: #FF6F00;
+            padding: 20px;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        section {
+            margin: 20px;
+        }
+
+        p.subheading {
+            font-size: 1.6rem;
+            color: #777;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        /* Responsividad para móviles */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 3rem; /* Título más pequeño en pantallas móviles */
+            }
+
+            h2 {
+                font-size: 1.5rem; /* Ajustar tamaño de los subtítulos en móviles */
+            }
+
+            .news-item h2 {
+                font-size: 1.4rem; /* Ajuste del tamaño de los títulos de las noticias */
+            }
+
+            .news-item p {
+                font-size: 1rem; /* Ajuste de los textos de noticias en móviles */
+            }
+
+            p.subheading {
+                font-size: 1.4rem; /* Ajuste del subtítulo */
+            }
+        }
+
+        /* Diseño para pantallas más grandes */
+        @media (min-width: 769px) {
+            body {
+                font-size: 1.3rem; /* Aumento de tamaño de texto en pantallas grandes */
+            }
+
+            h1 {
+                font-size: 5rem;
+            }
+
+            .news-item h2 {
+                font-size: 1.8rem;
+            }
+
+            .news-item p {
+                font-size: 1.2rem;
+            }
         }
     </style>
 </head>
